@@ -9,7 +9,7 @@ class ListaCircular:
         # CREAR (inicializa lista vacía)
         self.cabeza = None
 
-    # AGREGAR al final
+
     def agregar(self, dato):
         nuevo = Nodo(dato)
 
@@ -77,7 +77,7 @@ class ListaCircular:
                 ultimo.siguiente = self.cabeza
                 return True
 
-        # Buscar el nodo a eliminar
+    
         anterior = actual
         actual = actual.siguiente
 
@@ -90,10 +90,6 @@ class ListaCircular:
 
         return False
 
-
-# ----------------------
-# EJEMPLO DE USO
-# ----------------------
 
 if __name__ == "__main__":
     lista = ListaCircular()
@@ -110,4 +106,5 @@ if __name__ == "__main__":
 
     # Eliminar
     lista.eliminar(20)
+
     print("Lista después de eliminar 20:", lista.recorrer())
